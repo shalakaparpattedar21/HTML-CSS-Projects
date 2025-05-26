@@ -1,0 +1,131 @@
+  
+  :root {
+      background: #121212;
+      --sidebar: #000;
+      --primary: #1DB954;
+      --text: #fff;
+      --secondary-text: #b3b3b3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .brand img
+    {
+      width:50px;
+    }
+    .brand h1{
+      font-size: larger;
+      align-content: center;
+      color: white;
+
+    }
+    
+    body {
+      font-family: 'Varela Round', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: var(--sidebar);
+      padding: 20px;
+    }
+
+    .sidebar{
+      
+      color: var(--primary);
+      margin-bottom: 44px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      align-content:center ;
+      margin-bottom: 44px ;
+      margin-left: 20px;
+      color: var(--secondary-text);
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+      background-color: #181818;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 76px;
+    }
+    .albums h1
+    {
+      color: aliceblue;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-right: 500 px;
+    }
+
+    .album {
+      background-color: #282828;
+      border-radius: 8px;
+      padding: 5px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .album:hover {
+      background-color: #333;
+    }
+
+    .album img {
+      margin-right: 10px;
+      width:250px;;
+      border-radius: 2px;
+    }
+
+    .artist img {
+      margin-right: 10px;
+      width:200px;;
+      border-radius: 2px;
+    }
+
+    .player {
+      position: fixed;
+      bottom: 0;
+      left: 240px;
+      right: 0;
+      height: 80px;
+      background-color: #282828;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .player span {
+      font-size: 18px;
+    }
+
+    .controls span {
+      margin: 0 10px;
+      font-size: 24px;
+      cursor: default;
+    }
